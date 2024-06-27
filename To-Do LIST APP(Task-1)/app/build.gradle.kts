@@ -51,6 +51,8 @@ android {
 
 dependencies {
 
+    implementation ("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
