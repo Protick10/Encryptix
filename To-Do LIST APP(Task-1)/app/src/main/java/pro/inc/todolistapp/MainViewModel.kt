@@ -2,7 +2,10 @@ package pro.inc.todolistapp
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
@@ -29,6 +32,9 @@ class MainViewModel : ViewModel(){
 
     private val _listState = mutableStateOf(ListState())
     val listState: State<ListState> = _listState
+
+
+
 
     fun addItem(item: Listitem) {
         _listState.value = _listState.value.copy(

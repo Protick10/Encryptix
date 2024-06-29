@@ -2,15 +2,15 @@ package pro.inc.todolistapp
 
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
-import java.sql.Date
 
-data class Listitem(var id: Int,
-                    var name: String,
-                    var priority:Int,
-                    var description: String,
-                    var creationDate: Instant = Clock.System.now(),
-                    var dueDate: Instant,
-                    var isComplete:Boolean = false)
+data class Listitem(
+    var id: Int,
+    var name: String,
+    var priority:Int,
+    var description: String,
+    var creationDate: Instant = Clock.System.now(),
+    var dueDate: Instant,
+    var isComplete:Boolean = false)
 //                    var isEditingmode: Boolean = false)
 
 

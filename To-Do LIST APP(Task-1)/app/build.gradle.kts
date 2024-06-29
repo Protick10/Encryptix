@@ -51,6 +51,9 @@ android {
 
 dependencies {
 
+    //compose ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+
     implementation ("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
 
     implementation(libs.androidx.core.ktx)
